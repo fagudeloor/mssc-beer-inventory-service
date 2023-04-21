@@ -1,22 +1,11 @@
 package guru.sfg.beer.inventory.service.bootstrap;
 
-import guru.sfg.beer.inventory.service.domain.BeerInventory;
-import guru.sfg.beer.inventory.service.repositories.BeerInventoryRepository;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
-
-import java.util.UUID;
-
-/**
- * Created by jt on 2019-06-07.
- */
-@Slf4j
-@RequiredArgsConstructor
-@Component
-public class BeerInventoryBootstrap implements CommandLineRunner {
-    public static final String BEER_1_UPC = "0631234200036";
+//
+//@Slf4j
+//@RequiredArgsConstructor
+//@Component
+//public class BeerInventoryBootstrap implements CommandLineRunner {
+    /*public static final String BEER_1_UPC = "0631234200036";
     public static final String BEER_2_UPC = "0631234300019";
     public static final String BEER_3_UPC = "0083783375213";
     public static final UUID BEER_1_UUID = UUID.fromString("0a818933-087d-47f2-ad83-2f986ed087eb");
@@ -28,7 +17,7 @@ public class BeerInventoryBootstrap implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         if(beerInventoryRepository.count() == 0){
-            loadInitialInv();
+            //loadInitialInv();
         }
     }
 
@@ -55,5 +44,5 @@ public class BeerInventoryBootstrap implements CommandLineRunner {
                 .build());
 
         log.debug("Loaded Inventory. Record count: " + beerInventoryRepository.count());
-    }
-}
+    }*/
+//}
