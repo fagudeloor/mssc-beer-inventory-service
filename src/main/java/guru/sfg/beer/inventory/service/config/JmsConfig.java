@@ -10,9 +10,10 @@ import org.springframework.jms.support.converter.MessageType;
 @Configuration
 public class JmsConfig {
 
-    public static final String VALIDATE_ORDER_QUEUE = "validate-order";
+    public static final String NEW_INVENTORY_QUEUE = "new-inventory";
     public static final String ALLOCATED_ORDER_QUEUE = "allocate-order";
-    public static final String ALLOCATED_ORDER_RESPONSE_QUEUE = "allocate-order-response";
+    public static final String ALLOCATED_ORDER_RESPONSE_QUEUE = "allocate-order-response";;
+    public static final String DEALLOCATE_ORDER_QUEUE = "deallocate-order";
 
     @Bean
     public MessageConverter jacksonJmsMessageConverter(ObjectMapper objectMapper) {
